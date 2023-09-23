@@ -21,7 +21,7 @@ app.use(cookieSession({
 
     // This line means: if we are not in test mode, we set "secure: true", which means cookies will only be sent with HTTPS requests
     // While in test mode, we set "secure: false", because Jest do not use HTTPS to send requests
-    secure: process.env.NODE_ENV !== 'test'  
+    secure: false,  
 }));
 
 
