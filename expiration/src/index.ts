@@ -3,7 +3,7 @@ import { OrderCreatedListener } from './events/listeners/order-created-listener'
 
 
 const start = async () => {
-    console.log('starting expiration service...');
+    console.log('starting expiration service....');
     try {
         await natsWrapper.connect('ticketing', 'pitkh', 'http://nats-srv:4222');
         
